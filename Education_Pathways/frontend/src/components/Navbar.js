@@ -66,6 +66,10 @@ export default class NavbarComp extends Component {
                   Search
                 </Nav.Link> */}
 
+                <Nav.Link as={Link} to="/ece444lab1">
+                  ECE444-Lab1
+                </Nav.Link>
+
                 
 
               </Nav>
@@ -91,7 +95,21 @@ We are looking for feedback to improve Education Pathways and make it more usefu
 <p>Student team from <a href="https://shuiblue.github.io/UofT-ECE444/">ECE444-Fall2021</a> : Janelle Cuevas, Jean Lin, Terry Luan, Cansin Varol, Nick Woo</p>
 
 
-      </div>
+</div>
+</Route>
+         
+          <Route path="/ece444lab1">
+            <div className = "text_up">
+            <body> 
+              <p>
+            <b>Simrah Najeeb </b>
+            </p>
+            </body>
+           
+           
+           </div>
+          
+     
               {/* <SearchResultDisplay /> */}
             </Route>
             <Route path="/search">
@@ -104,10 +122,11 @@ We are looking for feedback to improve Education Pathways and make it more usefu
             <Route path="/">
               <SearchResultDisplay />
             </Route>
+            
+            
 
           </Switch>
-        </div>
-        
+          </div>
         
     
       </Router>
